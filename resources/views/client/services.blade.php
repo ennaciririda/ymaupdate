@@ -100,7 +100,7 @@
 				</div>
 				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
-						<div class="carousel-item active ">
+						<div class="carousel-item active " data-bs-interval="4000">
 							<div class="row d-flex justify-content-center ">
 								<div class="col-8">
 									<div class="icon-box ">
@@ -118,7 +118,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item ">
+						<div class="carousel-item " data-bs-interval="4000">
 							<div class="row  d-flex justify-content-center">
 								<div class="col-8">
 									<div class="icon-box">
@@ -136,7 +136,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item ">
+						<div class="carousel-item " data-bs-interval="4000">
 							<div class="row d-flex justify-content-center">
 								<div class="col-8">
 									<div class="icon-box">
@@ -151,7 +151,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item ">
+						<div class="carousel-item " data-bs-interval="4000">
 							<div class="row d-flex justify-content-center">
 								<div class="col-8">
 
@@ -167,7 +167,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item ">
+						<div class="carousel-item " data-bs-interval="4000">
 							<div class="row d-flex justify-content-center">
 								<div class="col-8">
 
@@ -222,9 +222,9 @@
 					<div class="col-lg-4 col-md-6 footer-links">
 						<h4>Nos contacts</h4>
 						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Call : +212 616-360735 | +212
+									666-216960</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Email : ymagestion@gmail.com</a></li>
 						</ul>
 					</div>
 
@@ -265,5 +265,3 @@
 </body>
 
 </html>
-
-

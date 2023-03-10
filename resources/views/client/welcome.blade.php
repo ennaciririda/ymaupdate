@@ -81,8 +81,7 @@
 			<div class="row">
 				<div class="col-5">
 				</div>
-				<div class="col-2 d-flex  justify-content-center"
-					data-aos="fade-up" data-aos-delay="200">
+				<div class="col-2 d-flex  justify-content-center" data-aos="fade-up" data-aos-delay="200">
 					<a class="btn" href="#rida"><i class="bi bi-arrow-down-short"></i></a>
 				</div>
 				<div class="col-5">
@@ -214,9 +213,9 @@
 					<div class="col-lg-4 col-md-6 footer-links">
 						<h4>Nos contacts</h4>
 						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Call : +212 616-360735 | +212
+									666-216960</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Email : ymagestion@gmail.com</a></li>
 						</ul>
 					</div>
 
@@ -235,7 +234,8 @@
 				</div>
 			</div>
 		</div>
-	</footer><!-- End Footer -->
+	</footer>
+	<!-- End Footer -->
 
 	<div id="preloader"></div>
 	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i

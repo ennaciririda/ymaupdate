@@ -102,7 +102,8 @@
 				<div class="row">
 					@foreach($projects as $project)
 					@if ($project->type == 'image')
-					<div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-3" data-aos="zoom-in" data-aos-delay="200">
+					<div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-3" data-aos="zoom-in"
+						data-aos-delay="200">
 						<div class="icon-box">
 							<h4 class="text-center">{{$project->title}}</h4>
 							<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -119,11 +120,12 @@
 								<!-- Controls -->
 
 							</div>
-							<h4 class="text-center">{{$project->category}}</h4>
+							<h4 class="text-center category">{{$project->category}}</h4>
 						</div>
 					</div>
 					@elseif ($project->type == 'video')
-					<div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-3" data-aos="zoom-in" data-aos-delay="10000">
+					<div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-3" data-aos="zoom-in"
+						data-aos-delay="10000">
 						<div class="icon-box">
 							<h4 class="text-center">{{$project->title}}</h4>
 							@foreach ($files->where('project_id', $project->id) as $file)
@@ -131,7 +133,7 @@
 								<source src="{{asset('images/' . $file->filename .'')}}" type="video/mp4">
 							</video>
 							@endforeach
-							<h4 class="text-center">{{$project->category}}</h4>
+							<h4 class="text-center category">{{$project->category}}</h4>
 						</div>
 					</div>
 					@endif
@@ -163,9 +165,9 @@
 					<div class="col-lg-4 col-md-6 footer-links">
 						<h4>Nos contacts</h4>
 						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Call : +212 616-360735 | +212
+									666-216960</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Email : ymagestion@gmail.com</a></li>
 						</ul>
 					</div>
 

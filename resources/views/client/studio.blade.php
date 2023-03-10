@@ -101,45 +101,46 @@
 				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-							class="active" aria-current="true" aria-label="Slide 1" style = "background-color : #EF8803;"></button>
+							class="active" aria-current="true" aria-label="Slide 1"
+							style="background-color : #EF8803;"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-							aria-label="Slide 2" style = "background-color : #EF8803;"></button>
+							aria-label="Slide 2" style="background-color : #EF8803;"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-							aria-label="Slide 3" style = "background-color : #EF8803;"></button>
+							aria-label="Slide 3" style="background-color : #EF8803;"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-							aria-label="Slide 3" style = "background-color : #EF8803;"></button>
+							aria-label="Slide 3" style="background-color : #EF8803;"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-							aria-label="Slide 3" style = "background-color : #EF8803;"></button>
+							aria-label="Slide 3" style="background-color : #EF8803;"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-							aria-label="Slide 3" style = "background-color : #EF8803;"></button>
+							aria-label="Slide 3" style="background-color : #EF8803;"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-							aria-label="Slide 3" style = "background-color : #EF8803;"></button>
+							aria-label="Slide 3" style="background-color : #EF8803;"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-							aria-label="Slide 3" style = "background-color : #EF8803;"></button>
+							aria-label="Slide 3" style="background-color : #EF8803;"></button>
 					</div>
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						<div class="carousel-item  active" data-bs-interval="2000">
 							<img src="assets/studioimages/1.png" class="d-block w-100" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item " data-bs-interval="2000">
 							<img src="assets/studioimages/2.png" class="d-block w-100" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item " data-bs-interval="2000">
 							<img src="assets/studioimages/3.png" class="d-block w-100" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item " data-bs-interval="2000">
 							<img src="assets/studioimages/4.png" class="d-block w-100" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item " data-bs-interval="2000">
 							<img src="assets/studioimages/5.png" class="d-block w-100" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item " data-bs-interval="2000">
 							<img src="assets/studioimages/6.png" class="d-block w-100" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item" data-bs-interval="2000">
 							<img src="assets/studioimages/7.png" class="d-block w-100" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item " data-bs-interval="2000">
 							<img src="assets/studioimages/8.png" class="d-block w-100" alt="...">
 						</div>
 					</div>
@@ -180,9 +181,9 @@
 					<div class="col-lg-4 col-md-6 footer-links">
 						<h4>Nos contacts</h4>
 						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Call : +212 616-360735 | +212
+									666-216960</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Email : ymagestion@gmail.com</a></li>
 						</ul>
 					</div>
 

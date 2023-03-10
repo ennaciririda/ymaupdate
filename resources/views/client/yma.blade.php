@@ -339,9 +339,9 @@
 					<div class="col-lg-4 col-md-6 footer-links">
 						<h4>Nos contacts</h4>
 						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Call : +212 616-360735 | +212
+									666-216960</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Email : ymagestion@gmail.com</a></li>
 						</ul>
 					</div>
 
