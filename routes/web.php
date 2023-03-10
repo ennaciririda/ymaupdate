@@ -26,18 +26,20 @@ Route::get('/', function () {
 });
 
 Route::get('/yma', [YmaController::class, 'index'])->name('yma');
-Route::get('/adminpage', [AdminController::class, 'index'])->name('admin');
 Route::get('/studio', [StudioController::class, 'index'])->name('studio');
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/realisation', [RealisationController::class, 'index'])->name('realisation');
 
-Route::post('/contact', [ContactController::class, 'insert'])->name('contact.store');
-Route::post('/store', [AdminController::class, 'store'])->name('realisation.store');
-Route::delete('/projects/{id}', [AdminController::class, 'delete'])->name('realisation.delete');
+Route::group(['middleware' => ['auth']], function(){
+	Route::get('/adminpage', [AdminController::class, 'index'])->name('admin');
+	Route::post('/contact', [ContactController::class, 'insert'])->name('contact.store');
+	Route::post('/store', [AdminController::class, 'store'])->name('realisation.store');
+	Route::delete('/projects/{id}', [AdminController::class, 'delete'])->name('realisation.delete');
+	Route::get('/message', [ContactController::class, 'rida'])->name('message');
+
+});
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

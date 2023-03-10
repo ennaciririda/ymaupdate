@@ -78,29 +78,22 @@
 
 				<ul class="list-unstyled components mb-5">
 
-					<li>
-						<a href="products.html">Products</a>
+					<li  class="active">
+						<a href="{{ url('/adminpage') }}">Projects</a>
 					</li>
 
 					<li>
-						<a href="#">Messages</a>
+						<a href="{{ url('/message') }}">Messages</a>
 					</li>
-					<li class="active">
+					<li>
 						<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
 							class="dropdown-toggle">Settings</a>
 						<ul class="collapse list-unstyled" id="homeSubmenu">
-							<li>
-								<a href="#"></a>
-							</li>
-							<li>
-								<a href="#">Add Admin</a>
-							</li>
-							<li>
-								<a href="#">Profile</a>
-							</li>
-							<li>
-								<a href="#">logout</a>
-							</li>
+						<li><a  href="{{ url('logout') }}" onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">Sign out</a></li>
+							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+								@csrf
+							</form>
 						</ul>
 					</li>
 

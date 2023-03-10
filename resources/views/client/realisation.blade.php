@@ -100,41 +100,37 @@
 				</div>
 
 				<div class="row">
-					@foreach ($projects as $project)
+					@foreach($projects as $project)
 					@if ($project->type == 'image')
-					<div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+					<div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-3" data-aos="zoom-in" data-aos-delay="200">
 						<div class="icon-box">
 							<h4 class="text-center">{{$project->title}}</h4>
-							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 								<!-- Slides -->
 								<div class="carousel-inner">
-									@foreach($files as $key => $file)
-									@if ($file->project_id == $project->id)
-									<div class="carousel-item {{ $key == '0' ? 'active':''}}">
-										<img src="{{asset('images/' . $file->filename .'')}}" alt="{{$project->title}}" class="d-block w-100 midea">
+									@foreach ($files->where('project_id', $project->id) as $file)
+									<div class="carousel-item {{ $loop->first ? 'active' : '' }}"
+										data-bs-interval="100">
+										<img src="{{asset('images/' . $file->filename .'')}}" alt="{{$project->title}}"
+											class="d-block w-100 midea">
 									</div>
-									@endif
 									@endforeach
 								</div>
 								<!-- Controls -->
-								<button class="carousel-control-prev"  data-slide="prev">
-									<span class="carousel-control-prev-icon"></span>
-								</button>
-								<button class="carousel-control-next"  data-slide="next">
-									<span class="carousel-control-next-icon"></span>
-								</button>
+
 							</div>
 							<h4 class="text-center">{{$project->category}}</h4>
 						</div>
 					</div>
-					@endif
-					@if ($project->type == 'video')
-					<div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+					@elseif ($project->type == 'video')
+					<div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-3" data-aos="zoom-in" data-aos-delay="10000">
 						<div class="icon-box">
 							<h4 class="text-center">{{$project->title}}</h4>
+							@foreach ($files->where('project_id', $project->id) as $file)
 							<video autoplay muted loop plays-inline class=" midea">
 								<source src="{{asset('images/' . $file->filename .'')}}" type="video/mp4">
 							</video>
+							@endforeach
 							<h4 class="text-center">{{$project->category}}</h4>
 						</div>
 					</div>

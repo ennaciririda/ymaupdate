@@ -9,9 +9,15 @@ class ContactController extends Controller
 {
     public function index()
     {
+
         return view('client.contact');
     }
 
+	public function rida()
+    {
+		$messages = Message::all();
+        return view('admin.message', compact('messages'));
+    }
 	public function insert(Request $request)
 	{
 		$message = new Message();
